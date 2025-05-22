@@ -1,0 +1,1441 @@
+
+/* Top Navigation Bar (Centered) */
+.top-navigation.centered {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; /* Center the main content horizontally */
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9em;
+}
+
+.top-navigation.centered .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-navigation.centered .right-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Rest of the CSS for individual elements remains the same */
+.top-navigation.centered .nav-items button.category-menu {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 15px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.top-navigation.centered .nav-items button.category-menu:hover {
+  background-color: #f8f9fa;
+}
+
+.top-navigation.centered .nav-items button.category-menu i {
+  font-size: 1.1em;
+}
+
+.top-navigation.centered .nav-items a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.top-navigation.centered .nav-items a:hover {
+  background-color: #f8f9fa;
+}
+
+.top-navigation.centered .nav-items .dropdown {
+  position: relative;
+}
+
+.top-navigation.centered .nav-items .dropdown-toggle {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.top-navigation.centered .nav-items .dropdown-toggle:hover {
+  background-color: #f8f9fa;
+}
+
+.top-navigation.centered .nav-items .dropdown-toggle i {
+  font-size: 0.8em;
+}
+
+.top-navigation.centered .nav-items .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  display: none; /* Initially hidden */
+  z-index: 10;
+}
+
+.top-navigation.centered .nav-items .dropdown:hover .dropdown-menu {
+  display: block; /* Show on hover */
+}
+
+.top-navigation.centered .nav-items .dropdown-menu a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.top-navigation.centered .nav-items .dropdown-menu a:hover {
+  background-color: #f8f9fa;
+}
+
+.top-navigation.centered .right-actions .language-currency,
+.top-navigation.centered .right-actions .ship-to {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.top-navigation.centered .right-actions .language-currency:hover,
+.top-navigation.centered .right-actions .ship-to:hover {
+  background-color: #f8f9fa;
+}
+
+.top-navigation.centered .right-actions .language-currency i,
+.top-navigation.centered .right-actions .ship-to i {
+  font-size: 0.8em;
+}
+
+.top-navigation.centered .right-actions .ship-to img {
+  width: 50px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+
+/* Main Hero Section */
+.main-hero {
+  padding: 20px 0; /* Adjust vertical padding of the section as needed */
+  background-color: white; /* Optional background for the whole section */
+}
+
+.container-hero {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px; /* Adjust the maximum width of the inner content */
+  margin: 0 auto; /* Center the inner container */
+  padding: 40px 20px; /* Keep inner padding if desired */
+  background-color: #fff; /* Keep the white background */
+  border-radius: 8px; /* Optional rounded corners for the inner container */
+  overflow: hidden; /* To contain floated elements or rounded corners */
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 0.8; /* Adjust flex-grow to control width relative to other sections */
+  max-width: 180px; /* Adjust maximum width as needed */
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.category-list li a {
+  display: block;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 0.9em; /* Adjust font size if needed */
+}
+
+.category-list li a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Hero Banner */
+.hero-banner {
+  flex: 2;
+  position: relative; /* To allow absolute positioning of other elements if needed later */
+  background-image: url('../assets/images/headphones.png'); /* Set the background image */
+  background-size: cover; /* Scale the image to cover the entire banner */
+  background-position: center; /* Center the image within the banner */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  border-radius: 10px;
+  padding: 30px;
+  display: flex; /* Use flexbox for overlaying content */
+  align-items: center; /* Vertically align content */
+  justify-content: flex-start; /* Align text to the start (left) */
+  color: white; /* Set default text color to white for better contrast */
+}
+
+.hero-content {
+  flex: 1; /* Allow text content to take up available space */
+  margin-right: 20px; /* Add some spacing between text and image */
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.2; /* Improve readability of multi-line text */
+}
+
+.btn-learn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95em;
+  /* Add some margin to separate button from text if needed */
+  margin-top: 15px;
+}
+
+
+/* Right Side Panel */
+.right-panel {
+  flex: 0.8; /* Adjust flex-grow to control width */
+  max-width: 180px; /* Adjust maximum width as needed */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-box,
+.coupon-box,
+.quote-box {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 0.85em; /* Adjust font size */
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 0.85em;
+}
+
+.btn-primary1 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 2px 2px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 0.85em;
+}
+
+.btn-outline {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 0.85em;
+}
+
+.hero-image {
+  max-width: 50px;
+  height: auto;
+}
+
+/* Right Side Panel */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.user-box{  background: lightblue;
+  padding: 28px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;}
+
+.coupon-box{  background: orange;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;}
+.quote-box {
+  background: cornflowerblue;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.btn-outline {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Example blue for links - REPLACE WITH FIGMA */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Example darker blue for link hover - REPLACE WITH FIGMA */
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff; /* Example blue for buttons - REPLACE WITH FIGMA */
+    color: #fff; /* REPLACE WITH FIGMA */
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Example darker blue for button hover - REPLACE WITH FIGMA */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 600px; /* Adjust as needed */
+}
+
+.search-bar {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Rounded left corners */
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    margin-right: 5px; /* Add some spacing between input and dropdown */
+}
+
+.search-bar::placeholder {
+    color: #999;
+}
+
+.category-dropdown {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.search-button {
+    background-color: #007bff; /* Example blue */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 4px 4px 0; /* Rounded right corners */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* HEADER */
+.site-header {
+    background-color: #fff; /* REPLACE WITH FIGMA */
+    padding: 20px 0; /* Adjust based on Figma */
+    border-bottom: 1px solid #eee; /* Adjust based on Figma */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adjust based on Figma */
+    flex-wrap: wrap;
+}
+
+.logo-link {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo {
+    height: 80px; /* Increased logo size - ADJUST BASED ON FIGMA */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc; /* Adjust based on Figma */
+    border-radius: 4px; /* Adjust based on Figma */
+    font-size: 16px;
+    font-family: 'Inter', sans-serif; /* Ensure this matches Figma */
+    color: #333; /* Adjust based on Figma */
+}
+
+.search-bar::placeholder {
+    color: #999; /* Adjust based on Figma */
+}
+
+.menu {
+    display: flex;
+    gap: 30px; /* Adjust based on Figma */
+    align-items: center;
+}
+
+.menu a {
+     display: flex; /* Keep using flex to potentially arrange other elements later */
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center the icon and text horizontally */
+    gap: 4px; /* Adjust vertical space between icon and text */
+    font-weight: 500;
+    color: #333;
+    text-align: center; /* Center the text within the link */}
+
+.menu a:hover {
+    color: #007bff; /* Adjust based on Figma */
+}
+.nav-icon {
+    height: 40px; /* Adjust the size as needed */
+    width: 40px; /* Adjust the size as needed */
+     /* Ensure the icon aligns vertically with the text */
+}
+/* MAIN CONTENT */
+.site-main {
+    padding: 40px 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #e0f7fa; /* Example light blue background - REPLACE WITH FIGMA */
+    border-radius: 8px; /* Adjust based on Figma */
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Adjust based on Figma */
+    margin-bottom: 20px;
+    color: #333; /* Adjust based on Figma */
+}
+
+.hero p {
+    font-size: 1.1em; /* Adjust based on Figma */
+    color: #666; /* Adjust based on Figma */
+    margin-bottom: 30px;
+}
+
+.hero .button {
+    margin-top: 20px;
+}
+
+.featured-products {
+    margin-bottom: 40px;
+}
+
+.featured-products h2 {
+    font-size: 2em; /* Adjust based on Figma */
+    margin-bottom: 25px;
+    color: #007bff; /* Example blue for heading - REPLACE WITH FIGMA */
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff; /* REPLACE WITH FIGMA */
+    border: 1px solid #ddd; /* Adjust based on Figma */
+    border-radius: 8px; /* Adjust based on Figma */
+    padding: 20px; /* Adjust based on Figma */
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px; /* Adjust based on Figma */
+    object-fit: cover;
+    height: 200px; /* Example fixed height - adjust based on Figma */
+}
+
+.product-card h3 {
+    font-size: 1.2em; /* Adjust based on Figma */
+    margin-bottom: 10px;
+    color: #333; /* Adjust based on Figma */
+}
+
+.product-card .price {
+    font-size: 1.1em; /* Adjust based on Figma */
+    color: #007bff; /* Example blue for price - REPLACE WITH FIGMA */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card .button {
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding: 10px 15px;
+}
+
+/* Style for the product categories section */
+.product-categories {
+    margin-bottom: 40px;
+}
+
+.product-categories h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #007bff;
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax width */
+    gap: 20px;
+}
+
+.category-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.category-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    object-fit: cover;
+    height: 150px; /* Adjust image height */
+}
+
+.category-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.category-card .discount,
+.category-card .price {
+    color: #d9534f; /* Example color for discount/price */
+    font-weight: bold;
+}
+
+.category-card.home-outdoor {
+    text-align: left; /* Align text in the main category card */
+}
+
+.category-card.home-outdoor h3 {
+    margin-bottom: 10px;
+}
+
+.category-card.home-outdoor .source-now {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.category-card.home-outdoor .subcategory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.category-card.home-outdoor .subcategory-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.category-card.home-outdoor .subcategory-item h4 {
+    font-size: 0.95em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.category-card.home-outdoor .subcategory-item img {
+    height: 80px; /* Adjust subcategory image height */
+}
+
+.category-card.home-outdoor .subcategory-item p {
+    font-size: 0.85em;
+    color: #777;
+}
+/* Updated Deals and Offers Grid */
+.deals-header-combined {
+    text-align: left; /* Align text to the left within this item */
+    margin-right: 20px; /* Add some spacing between the header and the first product */
+    flex-shrink: 0; /* Don't shrink the header */
+    width: auto; /* Adjust width as needed */
+}
+
+.deals-header-combined h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.deals-header-combined .hygiene-equipments {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.deals-header-combined .countdown {
+    display: flex;
+    gap: 10px;
+}
+
+.deals-header-combined .countdown-item {
+    background-color: #ddd;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.deals-header-combined .countdown-item .label {
+    display: block;
+    font-size: 0.7em;
+    font-weight: normal;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Ensure the deals-grid is still a flex container (you might already have this) */
+.deals-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Adjust as needed */
+    gap: 15px;
+    overflow-x: auto;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+/* Keep the styling for .deal-item as before */
+.deal-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    flex-shrink: 0;
+    width: auto;
+}
+
+.deal-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    object-fit: contain;
+    height: 100px; /* Adjust as needed */
+}
+
+.deal-item h3 {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.deal-item .discount {
+    color: #d9534f;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/*homeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
+
+
+.combined-section {
+    margin-bottom: 40px; /* Adjust as needed */
+}
+
+/* New style for the full-width section */
+.full-width-section {
+    width: 100%; /* Make it span the entire viewport width */
+    background-color: #f9f9f9; /* Match the background color */
+    padding: 20px 0; /* Add vertical padding to match the inner section */
+    margin-bottom: 40px; /* Keep the bottom margin */
+}
+
+/* Container to hold the inner content, matching the header's container */
+.combined-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.combined-layout {
+    display: flex;
+    gap: 20px; /* Spacing between the Home & Outdoor block and the product grid */
+    align-items: flex-start; /* Align items to the top */
+    /* Remove the background, border, and border-radius from here */
+}
+
+.home-outdoor-block {
+    flex: 1; /* Takes up available space on the left */
+    /* Remove background-color */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: left;
+    /* Add background image */
+    background-image: url('../assets/images/home-outdoor-banner.jpg'); /* REPLACE THIS PATH */
+    background-size: cover; /* Scale the image to cover the entire block */
+    background-position: center; /* Center the image within the block */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Set text color to white for better contrast against the image */
+    display: flex; /* Use flexbox to arrange text content */
+    flex-direction: column; /* Stack text elements vertically */
+    justify-content: flex-end; /* Push text content to the bottom */
+    padding-bottom: 280px; /* Add some padding at the bottom for text */
+}
+.Consumer-electronics-and-gadgets{    flex: 1; /* Takes up available space on the left */
+    /* Remove background-color */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: left;
+    /* Add background image */
+    background-image: url('../assets/images/image 102.jpg'); /* REPLACE THIS PATH */
+    background-size: cover; /* Scale the image to cover the entire block */
+    background-position: center; /* Center the image within the block */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Set text color to white for better contrast against the image */
+    display: flex; /* Use flexbox to arrange text content */
+    flex-direction: column; /* Stack text elements vertically */
+    justify-content: flex-end; /* Push text content to the bottom */
+    padding-bottom: 280px; /* Add some padding at the bottom for text */}
+.home-outdoor-block h3,
+.home-outdoor-block .source-now {
+    color: white; /* Ensure text within is white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional: add a text shadow for better readability */
+}
+
+.home-outdoor-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Or contain, depending on your image */
+    max-height: 150px; /* Adjust as needed */
+    
+}
+
+.home-outdoor-block h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.home-outdoor-block .source-now {
+    display: inline-block;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.Consumer-electronics-and-gadgets .source-now{
+        display: inline-block;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.product-grid-adjacent {
+    flex: 2; /* Takes up more space on the right for the 2x2 grid */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates two columns */
+    grid-row-gap: 15px;
+    column-gap: 15px;
+}
+
+.product-grid-adjacent .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 0px;
+    text-align: center;
+}
+
+.product-grid-adjacent .product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    object-fit: contain;
+    max-height: 100px; /* Adjust as needed */
+}
+
+.product-grid-adjacent .product-card h3 {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-grid-adjacent .product-card .price {
+    color: #777;
+    font-size: 0.9em;
+}
+
+
+/* New Hero Section Styles */
+.new-hero {
+  padding: 40px 0; /* Adjust vertical padding as needed */
+  background-color: #f0f8ff; /* Optional background color for the entire section */
+}
+
+.new-hero-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between left and right blocks */
+  align-items: center; /* Vertically align the content */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #e0f7fa; /* Optional background for the container */
+}
+
+.hero-left-content {
+  flex: 1; /* Takes up available space on the left */
+  color: #333;
+  padding-right: 30px; /* Add some spacing between text and form */
+}
+
+.hero-left-content h2 {
+  font-size: 2em; /* Adjust as needed */
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.hero-left-content p {
+  font-size: 1em; /* Adjust as needed */
+  color: #666;
+  line-height: 1.6;
+}
+
+.hero-right-form {
+  width: 400px; /* Adjust the width of the form block */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.hero-right-form h3 {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-right-form .input-group {
+  margin-bottom: 15px;
+}
+
+.hero-right-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.hero-right-form input[type="text"],
+.hero-right-form textarea,
+.hero-right-form input[type="number"],
+.hero-right-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.hero-right-form textarea {
+  min-height: 80px;
+}
+
+.hero-right-form .quantity-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.hero-right-form .quantity-group .input-group.quantity {
+  flex: 1;
+}
+
+.hero-right-form .quantity-group .select-group {
+  flex: 1;
+}
+
+.hero-right-form .select-group label {
+  display: none; /* Hide the label for the select as it's implied */
+}
+
+.hero-right-form .button.send-inquiry {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Recommended Items Section */
+.recommended-items {
+  padding: 40px 0;
+}
+
+.recommended-items .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recommended-items h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: left; /* Align heading to the left */
+}
+
+.recommended-items .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+}
+
+.recommended-items .product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: left; /* Align content within the card to the left */
+}
+
+.recommended-items .product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  object-fit: cover;
+  height: 150px; /* Adjust image height as needed */
+}
+
+.recommended-items .product-card .price {
+  color: #007bff; /* Example price color */
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.recommended-items .product-card h3 {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+
+/* Extra Services Section */
+.extra-services {
+  padding: 40px 0;
+  background-color: #f9f9f9; /* Optional background color */
+}
+
+.extra-services .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.extra-services h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.extra-services .services-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  padding-bottom: 20px; /* Add some padding for scrollbar */
+}
+
+.extra-services .service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-width: 250px; /* Minimum width for each card */
+  text-align: left;
+}
+
+.extra-services .service-card .image-container {
+  position: relative;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.extra-services .service-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 150px; /* Adjust as needed */
+}
+
+.extra-services .service-card .icon-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #e0f7fa; /* Light blue background for icon */
+  color: #007bff; /* Blue icon color */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  
+  
+}
+
+.extra-services .service-card h3 {
+  font-size: 1.1em;
+  color: #333;
+  padding: 15px;
+  margin-bottom: 0;
+}
+/* Suppliers by Region Section with 5 Columns */
+.suppliers-by-region {
+  padding: 40px 0;
+}
+
+.suppliers-by-region .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.suppliers-by-region h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.suppliers-by-region .region-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid; /* Change to CSS Grid */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax for desired width */
+  gap: 15px; /* Adjust gap as needed */
+}
+
+.suppliers-by-region .region-list li {
+  display: flex;
+  flex-direction: column; /* Stack flag, name, and domain vertically */
+  align-items: center; /* Center items horizontally */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px; /* Adjust padding */
+  font-size: 0.85em; /* Adjust font size */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-align: center; /* Center text */
+}
+
+.suppliers-by-region .region-list li img {
+  width: 40px; /* Adjust flag size */
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 5px; /* Add space below flag */
+}
+
+.suppliers-by-region .region-list li span {
+  color: #333;
+  display: block; /* Make spans take full width for centering */
+  margin-bottom: 3px; /* Add space below region name */
+}
+
+.suppliers-by-region .region-list li .domain {
+  color: #777;
+  font-size: 0.8em;
+}
+
+/* Newsletter Subscription Section */
+.newsletter-subscription {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Light grey background */
+  text-align: center;
+}
+
+.newsletter-subscription .container {
+  width: 90%;
+  max-width: 768px; /* Adjust max width as needed */
+  margin: 0 auto;
+}
+
+.newsletter-subscription h2 {
+  font-size: 1.8em; /* Adjust as needed */
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.newsletter-subscription p {
+  color: #6c757d; /* Greyish text */
+  margin-bottom: 30px;
+  font-size: 0.95em;
+}
+
+.newsletter-subscription .subscription-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px; /* Adjust form width */
+  margin: 0 auto;
+}
+
+.newsletter-subscription .input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 8px 12px;
+  flex-grow: 1;
+}
+
+.newsletter-subscription .input-wrapper i {
+  margin-right: 8px;
+  color: #6c757d;
+  font-size: 1em;
+}
+
+.newsletter-subscription .input-wrapper input[type="email"] {
+  border: none;
+  padding: 8px 0;
+  font-size: 1em;
+  color: #495057;
+  flex-grow: 1;
+}
+
+.newsletter-subscription .input-wrapper input[type="email"]:focus {
+  outline: none;
+}
+
+.newsletter-subscription .subscribe-button {
+  background-color: #007bff; /* Blue subscribe button */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-subscription .subscribe-button:hover {
+  background-color: #0056b3;
+}
+
+/* FOOTER */
+/* FOOTER */
+.site-footer {
+  background-color: white; /* Adjust from Figma */
+  padding-top: 40px; /* Adjust from Figma */
+  padding-bottom: 20px; /* Adjust from Figma */
+  border-top: 1px solid #eee; /* Adjust based on Figma */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px 30px 20px; /* Add left and right padding, adjust top/bottom */
+  max-width: 1200px; /* Optional: Limit the width of the content */
+  margin: 0 auto; /* Center the content if max-width is set */
+}
+
+.footer-about {
+  flex: 1 1 300px; /* Adjust width as needed */
+  margin-right: auto; /* Push link columns to the right */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust from Figma */
+  margin-bottom: 15px; /* Adjust from Figma */
+}
+
+.logo-footer {
+  height: 30px; /* Adjust from Figma */
+  width: auto;
+}
+
+.brand-name-footer {
+  font-size: 1.5em; /* Adjust from Figma */
+  font-weight: bold; /* Adjust from Figma */
+  color: #333; /* Adjust from Figma */
+}
+
+.company-info {
+  color: #777; /* Adjust from Figma */
+  font-size: 0.9em; /* Adjust from Figma */
+  line-height: 1.5; /* Adjust from Figma */
+  margin-bottom: 20px; /* Adjust from Figma */
+}
+
+.social-links {
+  display: flex;
+  gap: 10px; /* Adjust from Figma */
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links img {
+  height: 24px; /* Example smaller size - ADJUST BASED ON FIGMA */
+  width: 24px; /* Make width equal to height for a square - ADJUST BASED ON FIGMA */
+  object-fit: contain; /* Ensures the image fits within the bounds */
+  border-radius: 50%; /* Optional */
+  background-color: #ddd; /* Optional */
+  padding: 3px; /* Adjust padding for the smaller size */
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px; /* Adjust the horizontal space between link columns */
+}
+
+.footer-section {
+  flex-basis: auto;
+}
+
+.footer-section h4 {
+  font-size: 1.1em; /* Adjust from Figma */
+  color: #333; /* Adjust from Figma */
+  margin-bottom: 10px; /* Adjust from Figma */
+  font-weight: bold; /* Adjust from Figma */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0px; /* Adjust spacing between links */
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #555; /* Adjust from Figma */
+  font-size: 0.9em; /* Adjust from Figma */
+}
+
+.get-app {
+  margin-left: 40px; /* Add space before the Get app column */
+}
+
+.get-app h4 {
+  /* Inherits styles from other h4, adjust if needed */
+}
+
+.app-store-link, .google-play-link {
+  display: block;
+  margin-bottom: 10px; /* Adjust spacing */
+}
+
+.app-store-link img, .google-play-link img {
+  height: 35px; /* Example smaller height - ADJUST BASED ON FIGMA */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.footer-bottom {
+  background-color: #e9e9e9; /* Adjust from Figma */
+  padding: 15px 20px; /* Add left and right padding */
+  border-top: 1px solid #ddd; /* Adjust from Figma */
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Optional: Limit the width of the content */
+  margin: 0 auto; /* Center the content if max-width is set */
+}
+
+.bottom-container p {
+  color: #777; /* Adjust from Figma */
+  font-size: 0.85em; /* Adjust from Figma */
+  margin: 0;
+}
+
+.language-select {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Adjust spacing */
+  cursor: pointer;
+}
+
+.language-select img {
+  height: 20px; /* Adjust size */
+  width: auto;
+  vertical-align: middle;
+}
+
+.language-select span {
+  color: #555; /* Adjust from Figma */
+  font-size: 0.9em; /* Adjust from Figma */
+}
+
+.language-select i.icon-dropdown { /* Style for dropdown arrow */
+  font-size: 0.7em; /* Adjust size */
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-links {
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .get-app {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  .bottom-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
