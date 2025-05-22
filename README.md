@@ -1,5 +1,5 @@
 week 1 code is in folder (ecommerce-frontend-design) ---------
-the final code(week 2 + week 3) is in (ecommerce-frontend-design [FINAL])
+the final code(week 2 + week 3) is in folder (ecommerce-frontend-design [FINAL])
 
 4 html codes:
 index.html
